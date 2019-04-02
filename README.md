@@ -1,4 +1,4 @@
-# Rideogram - An R script for making ideogram, with marks on define chromosome locations.
+# Rideogram - An R script for making ideogram, with marks on defined chromosome locations.
 
 ### by: zhengzongli@gmail.com
 
@@ -17,8 +17,8 @@
 	chr6    43737290        43737313        VEGFA_site1     0
 	chr1    99347644        99347667        VEGFA_site1     3
 
-    The field Targetsite is the sgRNA name.
-    The field Mismatches being '0' means on-target, and >= 1 means off-target.
+ The field Targetsite is the sgRNA name.
+ The field Mismatches being '0' means on-target, and >= 1 means off-target.
 
 ## 3. Run the following command
 
