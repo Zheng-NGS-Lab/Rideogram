@@ -45,7 +45,7 @@ for (site in sites){
 	    mtext(side=1, line=0, at=xpos, sub('chr','',chr), cex=0.9)	
 
 	    # outer
-	    rect(xpos-0.2, 0, xpos+0.2, ymax, col = NA, border = 1)
+	    rect(xpos-0.2, 0, xpos+0.2, ymax, col = NA, border = 8)
 	    cent = di[di$BandColor=='red',]
 	    cent
 	    rect(xpos-0.2, ymax - cent$ChromStart, xpos+0.2, ymax - cent$ChromEnd, col = 'white', border = 'white')
