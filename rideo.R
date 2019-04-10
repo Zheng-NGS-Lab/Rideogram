@@ -58,7 +58,7 @@ for (site in sites){
 	    siteichr$off = ymax - siteichr$Start
 	    (nn = nrow(siteichr))
 	    
-	    points(rep(xpos, nn), siteichr$off, pch='--', col=ifelse(siteichr$Mismatches==0, 3, 2), cex=2.5)
+	    points(rep(xpos, nn), siteichr$off, pch='_', col=ifelse(siteichr$Mismatches==0, 3, 2), cex=2.5)
 	    xpos = xpos+1
 	}
 dev.off()
