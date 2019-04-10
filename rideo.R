@@ -25,7 +25,8 @@ dir.create('output', showWarnings = FALSE)
 for (site in sites){
 	sitei = subset(targetFileData, Targetsite == site)
 	sitei = sitei[order(-sitei$Mismatches),]
-    pdf(paste('output/', fileName, ".",site, '.pdf', sep=''))
+    #pdf(paste('output/', fileName, ".",site, '.pdf', sep=''))
+    svg(paste('output/', site, ".", fileName, '.svg', sep=''))
 	ymax = max(cyto$ChromEnd)
 	plot(0, xlim=c(0,24), ylim=c(0,ymax), type='n'
 		, axes=F, xlab='Chromosome', ylab=''
